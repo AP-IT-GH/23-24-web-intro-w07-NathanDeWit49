@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>coffee-contact</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <script src="css/reset.css" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./css/style.css" defer></script>
+  
+</head>
+
+<body class="p-3 m-0 border-0 bd-example">
+    <nav class="navbar navbar-expand-md bg-light container-fluid">
+        <a class="navbar-brand" href="./index.html"><img src="./assets/coffee.png" alt="Koffie & co" width="100" height="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="shop.html">shop</a>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            dropdown
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">subpagina 1</a></li>
+                <li><a class="dropdown-item" href="#">subpagina 2</a></li>
+                <li><a class="dropdown-item" href="#">subpagina 3</a></li>
+            </ul>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./contact.html">contact</a>
+            </li>
+        </ul>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="zoeken" aria-label="Search">
+            <button class="btn btn-sm btn-outline-secondary" type="submit">zoeken</button>
+        </form>
+        </div>
+    </nav>
+
+    <header class="row m-5">
+        <h1 class="col display-2 koffiebruin text-center">may the coffee<br>be with you</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <main class="col-md-9">
+                <section id="shopintro" class="row">
+                    <article class="col-12 mb-3">
+                        <h2 class="text-uppercase fs-4 fw-bolder pt-3">contact</h2>
+                        <p>Vul het registratieformulier in.<br>Velden met een <span class="koffiebruin">*</span> zijn verplicht.</p>
+                    </article>        
+                <form>
+                    <fieldset class="row">
+                        <legend class="text-uppercase fw-bolder">gegevens</legend>
+                        <article class="col-xl-6">
+                            <label for="voornaaminput">voornaam</label><span> *</span><br>
+                            <input class="form-control" type="text" name="vnaam" id="voornaaminput" required><br>
+                        </article>
+                        <article class="col-xl-6">
+                            <label for="achternaaminput">achternaam</label><span> *</span><br>
+                            <input class="form-control" type="text" name="anaam" id="achternaaminput" required>
+                        </article>
+                        <article class="col-6">
+                            <label for="mobielinput">mobiel</label>
+                            <input class="form-control" type="tel" placeholder="0412 34 56 78">
+                        </article>
+                        <article class="col-6">
+                            <label for="geboortedatuminput">geboortedatum</label>
+                            <input class="form-control" type="date" placeholder="dd/mm/jjjj">
+                        </article>
+                    </fieldset>
+                    <fieldset class="row">
+                        <legend class="text-uppercase fw-bolder">accountgegevens</legend>
+                        <article class="col-12">
+                            <label for="emailinput">e-mail</label><span> *</span><br>
+                            <input class="form-control" type="email" required><br>
+                        </article>
+                        <article class="col-xl-6">
+                            <label for="paswdinput">paswoord</label><span> *</span><br>
+                            <input class="form-control" type="password" required placeholder="min 8 karakters, 1 cijfer, 1 hoofdletter"><br>
+                        </article>
+                        <article class="col-xl-6">
+                            <label for="bpaswdinput">bevestiging paswoord</label><span> *</span><br>
+                            <input class="form-control" type="password" required><br>
+                        </article>
+                    </fieldset>
+                    <fieldset class="row">
+                        <legend class="text-uppercase fw-bolder">adresgegevens</legend>
+                        <article class="col-12">
+                            <label for="adresinput">adres</label><span> *</span><br>
+                            <input class="form-control" type="text" required><br>
+                        </article>
+                        <article class="col-md-3 col-6">
+                            <label for="postinput">postcode</label><span> *</span><br>
+                            <input class="form-control" type="password" required><br>
+                        </article>
+                        <article class="col-md-5 col-6">
+                            <label for= "stadinput">stad</label><span> *</span><br>
+                            <input class="form-control" type="password" required><br>
+                        </article>
+                        <article class="col-md-4">
+                            <label for="landinput">kies een land</label><span> *</span><br>
+                            <select class="form-select"><br>
+                                <option value="België" selected>België</option>
+                                <option value="Duitsland">Duitsland</option>
+                                <option value="Frankrijk">Frankrijk</option>
+                                <option value="Luxemburg">Luxemburg</option>
+                                <option value="Nederland">Nederland</option>
+                                <option value="Verenigd Koninkrijk">Verenigd Koninkrijk</option><br>
+                            </select>
+                        </article>
+                    </fieldset>
+                    <fieldset>
+                        <legend class="text-uppercase fw-bolder">koffie-achtergrond</legend>
+                        <article class="col-6">
+                            <label for="koopinput">ik koop</label><br>
+                            <select class="form-select"><br>
+                                <option value="koffiebonen">koffiebonen</option>
+                                <option value="gemalen koffie">gemalen koffie</option>
+                                <option value="oploskoffie">oploskoffie</option>
+                            </select><br>
+                        </article>
+                        <article class="col-6">
+                            <label for="faninput">en ben fan van</label><br>
+                            <select class="form-select"><br>
+                                <option value="Illy" selected>Illy</option>
+                                <option value="Lavazza">Lavazza</option>
+                                <option value="Starbucks">Starbucks</option>
+                                <option value="Gran Maestro">Gran Maestro</option>
+                                <option value="Italiano">Italiano</option>
+                                <option value="Celeste d'Oro">Celeste d'Oro</option><br>
+                                </select>
+                        </article>
+                        <article class="col">
+                            <label for="rangeinput">hoe tevreden ben je van ons?</label><br>
+                            <input type="range" class="form-range" min="0" max="10" step="1">
+                        </article>
+                    </fieldset>
+                    <input type="submit" class="btn btn-primary" value="Verzenden">
+                </form>
+                </section>
+            </main>
+
+            <aside class="col-md-3">
+                <h2 class="text-uppercase fs-6 fw-bolder padding-top-3">contact</h2>
+                <p>COFFEE shop<br>
+                  email <a href="mailto:mail@ap-coffeeshop.be">mail@ap-coffeeshop.be</a><br>
+                  phone +32 123 / 45 67 89</p>
+                <ul class="list-inline socials">
+                    <li class="list-inline-item">
+                        <a href="https://www.youtube.com" target="_blank">
+                            <i class="bi bi-youtube koffiebruin fs-3"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com" target="_blank">
+                            <i class="bi bi-instagram koffiebruin fs-3"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i class="bi bi-facebook koffiebruin fs-3"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="bi bi-twitter koffiebruin fs-3"></i>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+    <footer class="container-fluid text-center h6 small p-4">&copy; 2024 koffie enzo</footer>
+</body>
+
+</html>
